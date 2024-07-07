@@ -102,36 +102,60 @@ body {
 
 .controls {
     display: flex;
+    flex-direction:column;
+    align-items: center;
     justify-content: space-between;
     display: none;
+    border-radius: 50%;
+ 
 }
 
 
 @media screen and (max-width: 600px){
     .wrapper {
-        width: 90vmin;
-        height: 115vmin;
+        width: 98vmin;
+        height: 130vmin;
     }
 
     .game-details {
-        font-size: 1rem;
-        padding: 15px 27px;
+        
+        font-size: .8rem;
+        padding: 20px 27px;
     }  
     .controls{
         display: flex;
     }
     .controls i {
         padding: 15px 0;
-        font-size: 1rem;
+        font-size: 0.1rem;
     }
 }
 
+.strawberry{
+    font-size: 10px;
+}
+
 .controls i{
-    padding: 25px 0;
+    padding: 1px 0;
     color: pink;
     text-align: center;
     cursor: pointer;
     font-size: 1.3rem;
     width: calc(100% / 4);
-    border-right: 1px solid black;
+    border: 1px solid black;
+}
+
+.leftright{
+    width: 500px;
+    align-items: center;
+    text-align: center;
+
+}
+
+.up{
+    margin-bottom: 10px;
+}
+
+.down{
+    margin-top: 10px;
 }
